@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    <link rel="stylesheet" href="newstyle.css">
+    
 </head>
 <body>
-    <h2>My Projects:</h2>
+   <div class="title"> <font color="white" face="Montserrat"><u>My Projects:</u></font></div>
     <div class="flex">
         <div><a href="projectclock.html">1.Web Clock</a></div>
         <div><a href="todolist.html">2.To-Do List</a></div>
@@ -17,3 +17,37 @@
     
 </body>
 </html>
+
+
+<style>
+
+
+.flex >div a:hover{
+    font-size: 35px;
+    color:aqua;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.flex{
+    color: aliceblue;
+    display: table-row;
+}
+.flex > div a{ 
+    color: antiquewhite;
+    float: left;
+    margin: 20px;
+    font-size: 25px;
+    text-decoration: none;
+}
+.title{
+    margin-bottom: 30px;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+body
+{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    background-image: url("796849.jpg");
+}
+</style>
