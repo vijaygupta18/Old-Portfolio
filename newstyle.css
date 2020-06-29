@@ -9,10 +9,13 @@ body {
 }
 
 #menu{
-    display: flex;
-flex-wrap: nowrap;
-position: relative;
-margin-left: 11%;
+  display: flex;
+  width: auto;
+  height: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
 
 }
 
@@ -22,14 +25,14 @@ img{border: cornsilk;}
 
 
 
-#menu li {
-    display: inline;
+#menu div {display: flex;
     list-style: none;
     padding: 0;
     position: relative;
 }
 
-#menu li a {
+#menu div a {
+  
     
     font-size: 25px;
     text-align: center;
@@ -50,22 +53,22 @@ img{border: cornsilk;}
     -o-transition: all 0.8s ease-in-out;
 }
 
-#menu li a:hover {
+#menu div a:hover {
     color: white;
    color: rgb(53, 48, 48);
     background-position:right;
 }
 .row {
-    display: flex;
+  display: flex;
     margin-bottom: 5%;
   }
   
   .column {
-    flex: 100%;
+    flex: 50%;
     color: rgb(109, 109, 109);
   }
   .column1{
-      flex: 100%;
+      flex: 50%;
       margin-top: 1%;
       margin-right: 80px;
         }
@@ -107,6 +110,7 @@ img{border: cornsilk;}
 .python {width: 70%; background-color: #90a808;} 
 .java {width: 40%; background-color: #148cb1;} 
 .c {width: 65%; background-color: rgb(163, 32, 157);}
+
 
 
 
