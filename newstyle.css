@@ -1,0 +1,135 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #D3D4C0;
+    font-size: 24px;
+    font-style:italic
+    font-family; Arial: sans-serif;
+    text-align: center;
+}
+
+#menu{
+    display: flex;
+flex-wrap: nowrap;
+position: relative;
+margin-left: 9%;
+
+}
+
+img{border: cornsilk;}
+
+
+
+
+
+#menu li {
+    display: inline;
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+
+#menu li a {
+    
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid white;
+    padding: 15px 15px 22px 18px;
+    text-decoration:none;
+    margin-left: -1px;
+    color:black;
+    background-image: url('image.jpg');
+    background-size: cover;
+    
+    
+    background-position: left;
+    -webkit-transition: all 0.8s ease-in-out;
+    
+    -moz-transition: all 0.8s ease-in-out;
+    
+    -o-transition: all 0.8s ease-in-out;
+}
+
+#menu li a:hover {
+    color: white;
+   color: rgb(53, 48, 48);
+    background-position:right;
+}
+.row {
+    display: flex;
+    margin-bottom: 5%;
+  }
+  
+  .column {
+    flex: 100%;
+    color: rgb(109, 109, 109);
+  }
+  .column1{
+      flex: 100%;
+      margin-top: 1%;
+      margin-right: 80px;
+        }
+
+.column1 a{
+    font-size: 55px;
+    color:rgb(101, 68, 133);
+}
+.column1 a:hover{
+                color: darkorchid;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            
+            img {
+                border-radius: 50%;
+              }
+
+ /* let's make for skills              */
+
+ * {box-sizing:border-box}
+
+
+.container {
+  width: 60%; 
+  background-color: #ddd; 
+}
+
+.skills {
+  text-align: right; 
+  padding-top: 5px;
+  padding-bottom: 5px; 
+  margin-bottom: 50px;
+}
+
+.html {width: 85%; background-color: #4CAF50;} 
+.css {width: 70%; background-color: #2196F3;} 
+.js {width: 45%; background-color: #f44336;} 
+.python {width: 70%; background-color: #90a808;} 
+.java {width: 40%; background-color: #148cb1;} 
+.c {width: 65%; background-color: rgb(163, 32, 157);}
+
+
+
+/* this is for projects flexbox */
+.flex >div a:hover{
+    font-size: 45px;
+    color: blueviolet;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.flex{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 200px;
+    align-items: center;
+}
+.flex > div{ 
+    background-image: url('./image.jpg');
+    background-size: cover;
+    width: 25%;
+    height: 100px;
+    margin: 20px;
+    font-size: 40px;
+}
