@@ -113,4 +113,69 @@ img{border: cornsilk;}
 
 
 
+@media only screen and (max-width: 600px){
+  body{
+    font-size: 5.5vw;
+  }
+  #menu{
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+  
+  }
+
+  #menu div {display: flex;
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+
+#menu div a {
+  
+    
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid white;
+    padding: 6px 6px 6px 6px;
+    text-decoration:none;
+    margin-left: -1px;
+    color:black;
+    background-image: url('image.jpg');
+    background-size: cover;
+    
+    
+    background-position: left;
+    -webkit-transition: all 0.8s ease-in-out;
+    
+    -moz-transition: all 0.8s ease-in-out;
+    
+    -o-transition: all 0.8s ease-in-out;
+}
+
+#menu div a:hover {
+    color: white;
+   color: rgb(53, 48, 48);
+    background-position:right;
+}
+  .row {
+    display: table;
+      margin-bottom: 5%;
+    }
+
+    .column {
+      margin: auto;
+      width: 60%;
+      color: rgb(109, 109, 109);
+    }
+    .column1{
+        margin: auto;
+        
+        
+          }
+  
+}
 
