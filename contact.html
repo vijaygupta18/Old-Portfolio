@@ -19,7 +19,7 @@
         <div class="container">
             <div id="form-main">
                 <div id="form-div">
-                    <form class="montform" id="reused_form" >
+                    <form class="montform" method="post" name="myemailform" action="ftm.php" >
                         <p class="name">
                             <input name="name" type="text" class="feedback-input" required placeholder="Name" id="name" />
                         </p>
@@ -30,7 +30,7 @@
                             <textarea name="message" class="feedback-input" id="comment" placeholder="Message"></textarea>
                         </p>
                         <div class="submit">
-                            <button type="submit" class="button-blue">SUBMIT</button>
+                            <button type="submit" class="button-blue" value="submit">SUBMIT</button>
                             <div class="ease"></div>
                         </div>
                     </form>
