@@ -4,6 +4,7 @@
 html{    
   background:url('./796849.jpg') no-repeat;
   background-size: cover;
+	background-attachment: fixed;
   height:100%;
 }
 body
