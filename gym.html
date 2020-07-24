@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
 
 <style>
-    /* CSS Reset */
+    
     body {
         font-family: 'Baloo Bhai', cursive;
         color: white;
@@ -19,6 +19,7 @@
         background-image: url("./web/gym.jpg");
         background-position: center;
         background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .left {
@@ -37,7 +38,7 @@
 
     .left div {
         line-height: 19px;
-        font-size: 26px;
+        font-size: 1.2rem;
         text-align: center;
     }
 
@@ -129,9 +130,16 @@
     }
 
     @media only screen and (max-width: 600px){
+        .mid {
+        display: inline-block;
+        width: 90%;
+        margin: 29px auto;
+        margin-left: 20px;
+        /* border: 2px solid green; */
+    }
 
 
-       li .right{
+        .right{
             display: flex;
             flex-direction: column
             flex-wrap: wrap;
@@ -150,9 +158,8 @@
         .container {
             display: table;
         border: 2px solid white;
-        margin:auto
-        padding: 5px;
-        width: 70%;
+        margin:auto;
+        width: 60%;
         border-radius: 28px;
         
         
@@ -166,15 +173,46 @@
         border-radius: 5%;
     }
     .left {
-        display: flex;
-        display: inline-block;
+               display: inline-block;
+               
 
-        left: 150px;
+        left: 110px;
         top: 20px;
         position: relative;
     }
+
+    .navbar {
+        border-radius: 200px;
+        background-color:black;
+    }
+
+    .navbar li {display: inline;    
+        font-size: 15px;
+    }
+
+    .navbar li a {
+        color: rgb(216, 204, 204);
+        text-decoration: none;
+        padding: 14px 8px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+
+    }
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-image: url("./web/gym.jpg");
+        background-attachment: fixed;
     }
     }
+    
 
 </style>
 
@@ -189,7 +227,6 @@
         <div class="mid">
             <ul class="navbar">
                 <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About Us</a></li>
                 <li><a href="https://www.calculator.net/fitness-and-health-calculator.html">Fitness Calculator</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
