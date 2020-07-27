@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CALCULATOR</title>
+</head>
+<body>
+
+	<script>
+	function number(value){
+		document.form.result.value +=value;
+	}
+	function del(value){
+		document.form.result.value =value;
+    }
+    function bs(){
+        document.form.result.value=form.result.value.substring(0, form.result.value.length - 1);
+    }
+	function calculate(){
+
+		document.form.result.value = eval(document.form.result.value);
+    }
+    
+	</script>
+	<form name="form">
+	<table align="center">
+	<tr><td td colspan="4" style="font-size: 40px;">CALCULATOR</td></tr>
+		<tr><td colspan="4">
+		<input type = "text" name="result" placeholder="0" disabled style="text-align:right"></input>
+		</td></tr>
+		<tr>
+		<td><button type = "button" onclick="number(value)" value="1">1</button></td>
+		<td><button type = "button" onclick="number(value)" value="2">2</button></td>
+		<td><button type = "button" onclick="number(value)" value="3">3</button></td>
+		<td><button type = "button" onclick="number(value)" value="+" style="background-color: rgb(58, 209, 209);">+</button></td>
+		</tr>
+		<tr>
+		<td><button type = "button" onclick="number(value)" value="4">4</button></td>
+		<td><button type = "button" onclick="number(value)" value="5">5</button></td>
+		<td><button type = "button" onclick="number(value)" value="6">6</button></td>
+		<td><button type = "button" onclick="number(value)" value="-" style="background-color: rgb(58, 209, 209);">-</button></td>
+		</tr>
+		<tr>
+		<td><button type = "button" onclick="number(value)" value="7">7</button></td>
+		<td><button type = "button" onclick="number(value)" value="8">8</button></td>
+		<td><button type = "button" onclick="number(value)" value="9">9</button></td>
+		<td><button type = "button" onclick="number(value)" value="/" style="background-color: rgb(58, 209, 209);">/</button></td>
+		</tr>
+		<tr>
+		<td><button type = "button" onclick="number(value)" value="."<strong>.</strong></button></td>
+		<td><button type = "button" onclick="number(value)" value="0">0</button></td>
+		<td><button type = "button" onclick="number(value)" value="*">*</button></td>		
+		<td><button type = "button" onclick="number(value)" value="%" style="background-color: rgb(58, 209, 209);">%</button></td>
+		</tr>
+		<tr>
+		<td colspan="1">
+        <button type = "button" onclick="del(value)" value="" style="background-color:red;">C</button></td>
+        <td colspan="1">
+            <button type = "button" onclick="bs()" style="background-color: rgb(233, 119, 119);"><--</button>
+            </td>
+		<td colspan="1">
+		<button type = "button" onclick="calculate()" style="width: 200%;background-color: rgb(58, 209, 209);"">=</button>
+		</td>
+		</tr>
+	</table>
+	
+	
+	
+</body>
+
+<style>
+
+
+    table{
+        border-radius: 30px;
+    border:2px solid black; 
+    width:500px;
+    background-color:rgb(194, 194, 194);
+    }
+    td{
+    padding:15px;
+    height:20px;
+    color:white;
+    }
+    input{
+    width:100%;
+    height:150%;
+    border-radius: 10px;
+    background-color:rgb(214, 247, 213);
+    color: black;
+    font-size: 30px;
+    }
+    button{
+        background-color: rgb(172, 192, 209);
+    width:80px;
+    height:60px;
+    font-size: 30px;
+    font-family: cursive;
+    border-radius: 10px;
+    }
+    button:hover{
+    color: #2a57e9;
+    font-weight:bold;
+    font-size: 32px;
+    }
+    
+    @media screen and (max-width: 600px){
+        table{
+            width:200px;
+        }
+    }
+    </style>
+</html>
