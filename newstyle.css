@@ -180,7 +180,7 @@ img{border: cornsilk;}
 }
 
 .mesh-loader {
-  background: palegoldenrod;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("796849.jpg");
   overflow: hidden;
   height: 100%;
   width: 100%;
